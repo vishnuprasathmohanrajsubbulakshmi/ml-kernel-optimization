@@ -57,7 +57,7 @@ make
 ./bench_fc
 
 
-Future Work
+## Future Work
 
 Loop unrolling
 
@@ -67,5 +67,4 @@ Port to STM32 (Cortex-M)
 
 Compare with CMSIS-NN
 
-Author
-Vishnu
+Author : Vishnu
