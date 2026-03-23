@@ -48,6 +48,19 @@ add_executable(bench_dwconv_opt
     src/optimized/dwconv_int8_opt.c
 )
 
+add_executable(test_dwconv3x3
+    src/tests/test_dwconv3x3.c
+    src/optimized/dwconv3x3_int8.c
+)
+
+add_executable(bench_dwconv3x3
+    src/tests/bench_dwconv3x3.c
+    src/optimized/dwconv3x3_int8.c
+)
+
+target_include_directories(test_dwconv3x3 PRIVATE src)
+target_include_directories(bench_dwconv3x3 PRIVATE src)
+
 target_include_directories(test_dwconv_opt PRIVATE src)
 target_include_directories(bench_dwconv_opt PRIVATE src)
 
