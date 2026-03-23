@@ -1,4 +1,4 @@
-	# ML Kernel Optimization Project
+# ML Kernel Optimization Project
 
 This project implements and optimizes a fully connected (FC) neural network layer in C for embedded-style environments.
 
@@ -13,8 +13,11 @@ This project implements and optimizes a fully connected (FC) neural network laye
 ## Project Structure
 
 src/
+
 naive/ # baseline implementation
+
 optimized/ # optimized implementations
+
 tests/ # test and benchmark code
 
 
@@ -40,17 +43,28 @@ output[o] = bias[o] + sum(input[i] * weight[o][i])
 
 ## Build and Run
 
+
 mkdir build
+
 cd build
+
 cmake ..
+
 make
+
 ./test_fc
+
 ./bench_fc
 
+
 Future Work
+
 Loop unrolling
+
 SIMD optimization (CMSIS-NN style)
+
 Port to STM32 (Cortex-M)
+
 Compare with CMSIS-NN
 
 Author
