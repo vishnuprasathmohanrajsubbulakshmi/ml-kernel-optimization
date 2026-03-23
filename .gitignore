@@ -2,3 +2,29 @@ build/
 *.o
 *.out
 *.exe
+
+# Build
+build/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# Temporary
+*.npy
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Binaries
+*.o
+*.out
+test_*
+bench_*

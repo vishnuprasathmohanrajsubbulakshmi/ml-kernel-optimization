@@ -58,6 +58,13 @@ add_executable(bench_dwconv3x3
     src/optimized/dwconv3x3_int8.c
 )
 
+add_executable(test_runtime_mlp
+    src/tests/test_runtime_mlp.c
+    src/runtime/runtime_mlp.c
+)
+
+target_include_directories(test_runtime_mlp PRIVATE src)
+
 target_include_directories(test_dwconv3x3 PRIVATE src)
 target_include_directories(bench_dwconv3x3 PRIVATE src)
 
