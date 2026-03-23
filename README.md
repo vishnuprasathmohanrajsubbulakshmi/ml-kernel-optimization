@@ -34,12 +34,14 @@ output[o] = bias[o] + sum(input[i] * weight[o][i])
 
 ## Results
 
+## Depthwise Convolution Results
+
 | Version   | Time per run |
 |----------|-------------|
-| Naive    | ~4.7e-06 s  |
-| Optimized| ~4.9e-06 s  |
+| Naive    | 7.53e-05 s  |
+| Optimized| 6.36e-05 s  |
 
-(Note: On modern CPUs, compiler optimizations reduce the difference.)
+Observed speedup: ~15.6%
 
 ## Build and Run
 
