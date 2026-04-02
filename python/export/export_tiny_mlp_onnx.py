@@ -11,6 +11,8 @@ from python.models.tiny_mlp import TinyMLP
 
 def main() -> None:
     model = TinyMLP()
+    state_path = PROJECT_ROOT / "models" / "tiny_mlp_state.pt"
+    model.load_state_dict(torch.load(state_path, map_location="cpu"))
     model.eval()
 
     dummy_input = torch.randn(1, 1, 28, 28)

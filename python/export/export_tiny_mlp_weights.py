@@ -30,9 +30,9 @@ def main() -> None:
     model.load_state_dict(torch.load(state_path, map_location="cpu"))
     model.eval()
 
-    fc1_w = model.fc1.weight.detach().cpu().numpy().T.astype(np.float32)
+    fc1_w = model.fc1.weight.detach().cpu().numpy().astype(np.float32)
     fc1_b = model.fc1.bias.detach().cpu().numpy().astype(np.float32)
-    fc2_w = model.fc2.weight.detach().cpu().numpy().T.astype(np.float32)
+    fc2_w = model.fc2.weight.detach().cpu().numpy().astype(np.float32)
     fc2_b = model.fc2.bias.detach().cpu().numpy().astype(np.float32)
 
     out_path = PROJECT_ROOT / "src" / "runtime" / "tiny_mlp_weights.h"
